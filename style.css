@@ -1,0 +1,169 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family:'open sans',sans-serif;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 25px;
+    font-weight: bold;
+    float: left;
+    font-family: 'Courier New', Courier;
+    color: #f2f2f7;
+}
+
+.menu {
+    float: right;
+    background: #110324;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #110324;
+    z-index: 10;
+    border-bottom: 1px solid blue;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li {
+    a.tbl-buru {
+        background-color: #0775e4;
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 15px 20px 15px 20px;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    margin: 8px 4px 8px 4px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.kolom {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans-ms';
+    color: #000B58;
+}
+
+h2 {
+    font-family: 'comic sans-ms';
+    font-weight: 800;
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #000B58;
+    width: 100%;
+    line-height: 50px;
+}
+
+a.tbl-biru {
+    background-color: #0775e4;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+} 
+
+a.tbl-biru:hover {
+    background: rgb(213, 31, 131);
+    text-decoration: none;
+}
+
+a.tbl-pink {
+    background-color: #e407a2;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;  
+}
+
+a.tbl-pink:hover {
+    background: #0775e4;
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.tutors-list {
+    width: 100%;
+    position: relative;
+    display:  flex;
+    flex-wrap: wrap;
+}
+
+.kartu-tutors {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu-tutors img {
+    width: 80%;
+    border-radius: 70%;
+}
+
+.kartu-tutors p {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #000B58;
+}
