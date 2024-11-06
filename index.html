@@ -5,78 +5,299 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hendri Setio Purwanto</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Add your custom styles here */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: rgb(20 2 42);
+            color: white;
+            padding: 10px 0;
+        }
+        
+        nav .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        nav .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav .menu li {
+            margin: 0 15px;
+        }
+
+        nav .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav .btn-primary {
+            background-color: #00bfff; /* Button color */
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(245, 239, 239);
+            background-color: rgba(51, 5, 95, 0.4); /* Black w/ opacity */
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #ffffff;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 300px; /* Could be more or less, depending on screen size */
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Sign Up Section inside Modal */
+        #signup h2 {
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        #signup form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        #signup input[type="text"],
+        #signup input[type="email"],
+        #signup input[type="password"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #signup button {
+            background-color: #6a5acd; /* Gradient color */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #signup button:hover {
+            background-color: #5a4fbf; /* Darker shade for hover */
+        }
+
+        /* Footer Styles */
+        footer {
+            background: linear-gradient(135deg, #6a5acd, #00bfff); /* Gradient from purple to blue */
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .footer-section {
+            flex: 1 1 300px; /* Responsive layout */
+            margin: 10px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+            border-radius: 10px;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 10px;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            font-size: 12px;
+        }
+    </style>
 </head>
 <body>
+   <!-- Navigation -->
    <nav>
-     <div class="wrapper">
-        <div class="logo"><a href=''>Hendri Setio Purwanto</a></div>
-        <div class="menu">
-            <ul>
-                <li><a href="">home</a></li>
-                <li><a href="#courses">courses</a></li>
-                <li><a href="#tutors">tutors</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#contac">contac</a></li>
-                <li><a href=""class="tbl-biru">sign up</a></li>
-            </ul>
-        </div>
-     </div>
+       <div class="wrapper">
+           <div class="logo"><a href="#">Hendri Setio Purwanto</a></div>
+           <div class="menu">
+               <ul>
+                   <li><a href="#home">Home</a></li>
+                   <li><a href="#experience">Experience</a></li>
+                   <li><a href="#contact">Contact</a></li>
+                   <li><a id="signupBtn" class="btn-primary">Sign Up</a></li>
+               </ul>
+           </div>
+       </div>
    </nav>
-   <div class="wrapper">
-    <!-- untuk home -->
-    <section id="home">
-        <img width="400px" src="c:\Users\impst\Downloads\WhatsApp Image 2024-10-22 at 22.46.25_eb2149aa 2.png"/>
-        <div class="kolom">
-        <p class="deskripsi">Hallo</p>
-        <h2>HENDRI SETIO PURWANTO</h2>
-        <p>I'm a Product Support system
-            Currently, I am a product support at the Informatika Media Pratama</p>
-        <p>I am an IT professional with 5 years of experience as a software support specialist and system implementer. A very thorough and skilled person operating various IT support platforms.
-            Have good oral and verbal communication skills, and are able to explain complex software issues in easy-to-understand terms.</p>
-        <p><a href="" class="tbl-pink">Pelajari Lebih lanjut</a></p>
-    </section>
 
-    <!-- untuk courses -->
-    <section id="courses">
-        <div class="kolom">
-            <p class="deskripsi">you will need this</p>
-            <h2>online courses</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tenetur sapiente itaque at laudantium veniam deserunt iure quia sunt suscipit omnis accusamus mollitia cupiditate voluptatem quod, commodi est expedita vitae.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tenetur sapiente itaque at laudantium veniam deserunt iure quia sunt suscipit omnis accusamus mollitia cupiditate voluptatem quod, commodi est expedita vitae.</p>
-            <p><a href="" class="tbl-biru">pelajari Lebih lanjut</a></p>
-        </div>
-        <img src="c:\Users\impst\Downloads\WhatsApp Image 2024-10-23 at 01.46.17_5cfefd3c 2.png"/>
-    </section>
-    <!-- untuk tutors -->
-     <section id="tutors">
-        <div class="tengah">
-            <div class="kolom">
-                <p class="deskripsi">Our Top tutors</p>
-                <h2>tutors</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eos eveniet iste aspernatur! Architecto doloribus quo ducimus sit? Id necessitatibus debitis perspiciatis accusamus. Minus, minima. Optio reprehenderit esse repellat beatae?</p>
-            </div>
+   <!-- Hero Section -->
+   <section id="home" class="hero">
+       <div class="wrapper">
+           <div class="hero-content">
+               <div class="profile">
+                   <img src="c:\Users\impst\Downloads\home page.png" alt="Profile Image" class="profile-image">
+               </div>
+               <div class="hero-text">
+                   <h1>Hendri Setio Purwanto</h1>
+                   <p>I'm a Product Support Specialist at Informatika Media Pratama. Experienced in software support and system implementation.</p>
+                   <a href="#about" class="btn-secondary">Learn More</a>
+               </div>
+           </div>
+       </div>
+   </section>
 
-        <div class="tutor-list">
-            <div class="kartu-tutor">
-                <img src="https://th.bing.com/th/id/OIP.fHIYfb26YFkUHvi7J8NDDAHaLH?w=195&h=292&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
-                <p>Hendri Setio Purwanto</p>
-            </div>
-            <div class="kartu-tutor">
-                <img src="https://th.bing.com/th/id/OIP.fHIYfb26YFkUHvi7J8NDDAHaLH?w=195&h=292&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
-                <p>Hendri Setio Purwanto</p>
-            </div>
-            <div class="kartu-tutor">
-                <img src="https://th.bing.com/th/id/OIP.fHIYfb26YFkUHvi7J8NDDAHaLH?w=195&h=292&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
-                <p>Hendri Setio Purwanto</p>
-            </div>
-            <div class="kartu-tutor">
-                <img src="https://th.bing.com/th/id/OIP.fHIYfb26YFkUHvi7J8NDDAHaLH?w=195&h=292&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
-                <p>Hendri Setio Purwanto</p>
-            </div>
-        </div>
+   <!-- Sign Up Modal -->
+   <div id="signupModal" class="modal">
+       <div class="modal-content">
+           <span class="close">&times;</span>
+           <div id="signup">
+               <h2>Sign Up</h2>
+               <form action="#" method="POST">
+                   <input type="text" name="username" placeholder="Username" required>
+                   <input type="email" name="email" placeholder="Email" required>
+                   <input type="password" name="password" placeholder="Password" required>
+                   <button type="submit">Create Account</button>
+               </form>
+           </div>
+       </div>
+   </div>
 
-        </div>
-     </section>
-   </div> 
+   <!-- Experience Section -->
+   <section id="experience" class="section">
+       <div class="wrapper">
+           <div class="section-header">
+               <h2>My Experience</h2>
+               <p>A background in Product Support and IT implementation</p>
+           </div>
+           <div class="experience-grid">
+               <div class="experience-card fade-in">
+                   <img src="d:\website hendri\Aset\pratesis.png" alt="PT. PRATESIS" class="experience-image">
+                   <p>PT. PRATESIS</p>
+               </div>
+               <div class="experience-card fade-in">
+                   <img src="c:\Users\impst\Downloads\upfield_logo.jpg" alt="PT. UPFIELD" class="experience-image">
+                   <p>PT. UPFIELD</p>
+               </div>
+               <div class="experience-card fade-in">
+                   <img src="c:\Users\impst\Downloads\kino.jpg" alt="PT. KINO" class="experience-image">
+                   <p>PT. KINO</p>
+               </div>
+               <div class="experience-card fade-in">
+                   <img src="d:\website hendri\Aset\bank indonesia.png" alt="BANK INDONESIA" class="experience-image">
+                   <p>BANK INDONESIA</p>
+               </div>
+               <div class="experience-card fade-in">
+                   <img src="d:\website hendri\Aset\imp.png" alt="PT INFORMATIKA MEDIA PRATAMA" class="experience-image">
+                   <p>PT INFORMATIKA MEDIA Pratama</p>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Footer -->
+   <footer id="contact">
+       <div class="wrapper">
+           <div class="footer-grid">
+               <div class="footer-section">
+                   <h3>About Me</h3>
+                   <p>I am a product support specialist expanding my knowledge in product management and UI/UX design.</p>
+               </div>
+               <div class="footer-section">
+                   <h3>Contact</h3>
+                   <p>Address: Jl. Sumur Bungur, Setu, Cipayung, Jakarta Timur</p>
+                   <p>Email: hendrispurwanto75@gmail.com</p>
+               </div>
+               <div class="footer-section">
+                   <h3>Social Media</h3>
+                   <ul>
+                       <li><a href="https://youtube.com/@dijagalilin">YouTube: JAGA LILIN</a></li>
+                       <li><a href="https://www.instagram.com/samhendri49">Instagram: samhendri49</a></li>
+                       <li><a href="https://www.linkedin.com/in/hendri-spurwanto-968911336/">LinkedIn: samudra hendri</a></li>
+                   </ul>
+               </div>
+           </div>
+           <div class="footer-bottom">
+               &copy; 2024 Hendri Setio Purwanto | All Rights Reserved.
+           </div>
+       </div>
+   </footer>
+
+   <script>
+       // Get the modal
+       var modal = document.getElementById("signupModal");
+
+       // Get the button that opens the modal
+       var btn = document.getElementById("signupBtn");
+
+       // Get the <span> element that closes the modal
+       var span = document.getElementsByClassName("close")[0];
+
+       // When the user clicks the button, open the modal 
+       btn.onclick = function() {
+           modal.style.display = "block";
+       }
+
+       // When the user clicks on <span> (x), close the modal
+       span.onclick = function() {
+           modal.style.display = "none";
+       }
+
+       // When the user clicks anywhere outside of the modal, close it
+       window.onclick = function(event) {
+           if (event.target == modal) {
+               modal.style.display = "none";
+           }
+       }
+   </script>
 </body>
 </html>
